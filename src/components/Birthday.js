@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export default class components extends Component{
+export default class Birthday extends Component{
  render(){
   return (
     <div>
-      
+
     </div>
   );
  }
