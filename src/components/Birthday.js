@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../App.css';
 
 export default class Birthday extends Component{
   constructor() {
@@ -14,14 +15,14 @@ export default class Birthday extends Component{
   }
   
  render(){
-   const { showMessage } = this.state;
+  const { showMessage } = this.state;
   return (
     <div>
-      <header>
+      <header className="App-header">
         <h1>Feliz aniversário</h1>
       </header>
       { showMessage &&
-        <section>
+        <section className="Sections">
           <p>
             Parabéns, hoje é seu aniversário!!!
           </p>
@@ -30,8 +31,8 @@ export default class Birthday extends Component{
       }
       {
         !showMessage &&
-        <section>
-          <button type="button" onClick={this.handleClick}>Mostrar mensagem</button>
+        <section className="Sections">
+          <button type="button" onClick={this.handleClick} className="Message-btn">Mostrar mensagem</button>
         </section>
       }
     </div>
